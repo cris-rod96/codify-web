@@ -6,17 +6,17 @@ import { TbPdf } from 'react-icons/tb'
 import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md'
 
 const images = [
-  '/src/assets/01.jpeg',
-  '/src/assets/02.jpeg',
-  '/src/assets/03.jpeg',
-  '/src/assets/04.jpeg',
-  '/src/assets/05.jpeg',
-  '/src/assets/06.jpeg',
-  '/src/assets/07.jpeg',
-  '/src/assets/08.jpeg',
-  '/src/assets/09.jpeg',
-  '/src/assets/10.jpeg',
-  '/src/assets/11.jpeg',
+  '/01.jpeg',
+  '/02.jpeg',
+  '/03.jpeg',
+  '/04.jpeg',
+  '/05.jpeg',
+  '/06.jpeg',
+  '/07.jpeg',
+  '/08.jpeg',
+  '/09.jpeg',
+  '/10.jpeg',
+  '/11.jpeg',
 ]
 const App = () => {
   return (
@@ -25,11 +25,7 @@ const App = () => {
       <header className="px-10 h-[70px] flex flex-row items-center justify-between bg-[#741D1D]">
         {/* Logo y nombre de la app */}
         <div className="flex flex-row items-center">
-          <img
-            src="/src/assets/logo_codify.png"
-            alt=""
-            className="w-[80px] h-[80px]"
-          />
+          <img src="/logo_codify.png" alt="" className="w-[80px] h-[80px]" />
           <h4 className="text-3xl text-white font-bold">Codify UTC</h4>
         </div>
       </header>
@@ -53,7 +49,7 @@ const App = () => {
             <div className="mt-5 flex flex-row items-center gap-2">
               <a
                 download
-                href="/src/assets/codify-utc.apk"
+                href="/codify-utc.apk"
                 className="w-[200px] py-3 flex flex-row items-center justify-center bg-[#741D1D] text-lg text-white rounded-xl mr-5"
               >
                 Descargar
@@ -71,7 +67,7 @@ const App = () => {
           {/* Logo */}
           <div className="w-[200px] h-[200px] relative bg-[#741D1D] rounded-3xl">
             <img
-              src="/src/assets/logo_codify.png"
+              src="/logo_codify.png"
               alt="Logo de la aplicación"
               className="absolute w-full h-full"
             />
