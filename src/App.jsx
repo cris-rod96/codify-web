@@ -6,17 +6,17 @@ import { TbPdf } from 'react-icons/tb'
 import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md'
 
 const images = [
-  '/public/01.jpeg',
-  '/public/02.jpeg',
-  '/public/03.jpeg',
-  '/public/04.jpeg',
-  '/public/05.jpeg',
-  '/public/06.jpeg',
-  '/public/07.jpeg',
-  '/public/08.jpeg',
-  '/public/09.jpeg',
-  '/public/10.jpeg',
-  '/public/11.jpeg',
+  '/src/assets/01.jpeg',
+  '/src/assets/02.jpeg',
+  '/src/assets/03.jpeg',
+  '/src/assets/04.jpeg',
+  '/src/assets/05.jpeg',
+  '/src/assets/06.jpeg',
+  '/src/assets/07.jpeg',
+  '/src/assets/08.jpeg',
+  '/src/assets/09.jpeg',
+  '/src/assets/10.jpeg',
+  '/src/assets/11.jpeg',
 ]
 const App = () => {
   return (
@@ -26,7 +26,7 @@ const App = () => {
         {/* Logo y nombre de la app */}
         <div className="flex flex-row items-center">
           <img
-            src="/public/logo_codify.png"
+            src="/src/assets/logo_codify.png"
             alt=""
             className="w-[80px] h-[80px]"
           />
@@ -53,7 +53,7 @@ const App = () => {
             <div className="mt-5 flex flex-row items-center gap-2">
               <a
                 download
-                href="/public/codify-utc.apk"
+                href="/src/assets/codify-utc.apk"
                 className="w-[200px] py-3 flex flex-row items-center justify-center bg-[#741D1D] text-lg text-white rounded-xl mr-5"
               >
                 Descargar
@@ -71,7 +71,7 @@ const App = () => {
           {/* Logo */}
           <div className="w-[200px] h-[200px] relative bg-[#741D1D] rounded-3xl">
             <img
-              src="/public/logo_codify.png"
+              src="/src/assets/logo_codify.png"
               alt="Logo de la aplicación"
               className="absolute w-full h-full"
             />
