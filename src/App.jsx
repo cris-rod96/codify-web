@@ -20,93 +20,90 @@ const images = [
 ]
 const App = () => {
   return (
-    <div className="w-full h-screen flex flex-col ">
+    <div className="w-full min-h-screen flex flex-col">
       {/* Header */}
-      <header className="px-10 h-[70px] flex flex-row items-center justify-between bg-[#741D1D]">
+      <header className="px-5 md:px-10 h-[70px] flex flex-row items-center justify-between bg-[#741D1D]">
         {/* Logo y nombre de la app */}
-        <div className="flex flex-row items-center">
-          <img src="/logo_codify.png" alt="" className="w-[80px] h-[80px]" />
-          <h4 className="text-3xl text-white font-bold">Codify UTC</h4>
+        <div className="flex items-center gap-2 md:gap-4">
+          <img
+            src="/logo_codify.png"
+            alt="Logo"
+            className="w-[60px] md:w-[80px] h-[60px] md:h-[80px]"
+          />
+          <h4 className="text-xl md:text-3xl text-white font-bold">
+            Codify UTC
+          </h4>
         </div>
       </header>
 
-      <main className="w-[85%] mx-auto mt-10 pb-[100px]">
+      <main className="w-[90%] md:w-[85%] mx-auto mt-5 md:mt-10 pb-[80px]">
         {/* HEADER NOMBRE Y LOGO */}
-        <div className="flex flex-row justify-between items-start">
-          <div className="flex flex-col gap-1 w-full">
-            <h2 className="text-6xl font-semibold text-[#202124]">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
+          <div className="flex flex-col gap-1 w-full text-center md:text-left">
+            <h2 className="text-3xl md:text-6xl font-semibold text-[#202124]">
               Codify UTC - Oficial
             </h2>
 
-            <div className="mt-5 flex flex-col">
-              <h3 className="text-xl font-bold text-[#741D1D]">
+            <div className="mt-3 md:mt-5 flex flex-col">
+              <h3 className="text-lg md:text-xl font-bold text-[#741D1D]">
                 Cristhian Rodríguez
               </h3>
-              <h5 className="text-[#94969A]">Desarrollador</h5>
+              <h5 className="text-[#94969A] text-sm md:text-base">
+                Desarrollador
+              </h5>
             </div>
 
             {/* Botones */}
-            <div className="mt-5 flex flex-row items-center gap-2">
+            <div className="mt-5 flex flex-col md:flex-row items-center gap-3">
               <a
                 download
                 href="/codify-utc.apk"
-                className="w-[200px] py-3 flex flex-row items-center justify-center bg-[#741D1D] text-lg text-white rounded-xl mr-5"
+                className="w-full md:w-[200px] py-3 flex items-center justify-center bg-[#741D1D] text-white text-lg rounded-xl"
               >
                 Descargar
               </a>
               <a
                 href=""
-                className="flex flex-row items-center justify-between gap-2 text-[#741D1D] font-semibold text-lg"
+                className="flex items-center gap-2 text-[#741D1D] font-semibold text-lg"
               >
-                <TbPdf size={30} />
+                <TbPdf size={25} />
                 Ver manual
               </a>
             </div>
           </div>
 
           {/* Logo */}
-          <div className="w-[200px] h-[200px] relative bg-[#741D1D] rounded-3xl">
+          <div className="w-[150px] md:w-[200px] h-[150px] md:h-[200px] bg-[#741D1D] rounded-3xl mt-5 md:mt-0">
             <img
               src="/logo_codify.png"
               alt="Logo de la aplicación"
-              className="absolute w-full h-full"
+              className="w-full h-full"
             />
           </div>
         </div>
 
-        <div className="mt-[50px] flex flex-col">
+        <div className="mt-8 md:mt-[50px] flex flex-col">
           {/* Descripcion */}
           <div className="flex flex-col">
-            <div className="flex flex-row items-center gap-3">
-              <h3 className="text-2xl font-bold">Acerca de esta aplicación</h3>
+            <div className="flex items-center gap-3">
+              <h3 className="text-xl md:text-2xl font-bold">
+                Acerca de esta aplicación
+              </h3>
               <MdOutlineKeyboardDoubleArrowRight />
             </div>
 
-            <p className="w-[1200px] my-5 text-justify text-lg text-black">
+            <p className="w-full md:w-[85%] my-5 text-justify text-base md:text-lg text-black">
               Codify UTC es una innovadora aplicación diseñada para facilitar el
               aprendizaje de programación a través de la gamificación. Nuestro
               objetivo es hacer que el proceso de aprendizaje sea dinámico,
-              interactivo y accesible para estudiantes de todos los niveles. Con
-              Codify UTC, los usuarios podrán reforzar sus conocimientos
-              mediante quizzes, rompecabezas y desafíos de lógica, promoviendo
-              un aprendizaje basado en la práctica y la resolución de problemas.
-              Cada actividad está diseñada para desarrollar habilidades clave en
-              lógica computacional y pensamiento algorítmico. Además, la
-              plataforma permite a los docentes crear sus propios cursos y
-              clases, proporcionando una experiencia personalizada para sus
-              estudiantes. Para garantizar un acceso controlado, cada curso está
-              protegido por un código de inscripción, el cual es compartido por
-              el docente con sus alumnos. Nuestra misión es transformar la
-              enseñanza de la programación, convirtiéndola en una experiencia
-              divertida y efectiva. Queremos que tanto estudiantes como docentes
-              encuentren en Codify UTC una herramienta poderosa para desarrollar
-              habilidades en programación de manera práctica e intuitiva.
+              interactivo y accesible para estudiantes de todos los niveles...
             </p>
           </div>
-          {/* SLide */}
+
+          {/* Slide */}
           <Swiper
             modules={[Pagination, Autoplay]}
-            spaceBetween={50}
+            spaceBetween={20}
             slidesPerView={1}
             pagination={{ clickable: true }}
             autoplay={{ delay: 3600, disableOnInteraction: false }}
@@ -117,7 +114,7 @@ const App = () => {
                 <img
                   src={src}
                   alt={`Slide ${index + 1}`}
-                  className="w-full rounded-lg h-[1000px]"
+                  className="w-full h-auto max-h-[500px] rounded-lg object-cover"
                 />
               </SwiperSlide>
             ))}
