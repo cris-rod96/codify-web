@@ -57,7 +57,7 @@ const App = () => {
             <div className="mt-5 flex flex-col md:flex-row items-center gap-3">
               <a
                 download
-                href="/codify.apk"
+                href="/codify-v2.apk"
                 className="w-full md:w-[200px] py-3 flex items-center justify-center bg-[#741D1D] text-white text-lg rounded-xl"
               >
                 Descargar
